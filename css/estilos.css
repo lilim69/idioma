@@ -1,0 +1,236 @@
+/* Tipografía de estilo clásico */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
+
+:root {
+    --rosa-suave: #D7BFBE;
+    --azul-claro: #ADCAE5;
+    --blanco-gris: #F8F7F9;
+    --rosa-fuerte: #F782A7;
+    --rosado-pastel: #FFBFD8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: var(--blanco-gris);
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 30px 0;
+    background-color: var(--rosado-pastel);
+    border-bottom: 3px solid var(--rosa-fuerte);
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: var(--rosa-fuerte);
+}
+
+header p {
+    font-style: italic;
+    color: #444;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    background-color: white;
+    padding: 20px;
+    border: 2px solid var(--rosa-suave);
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: var(--azul-claro);
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: var(--rosa-fuerte);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--azul-claro);
+}
+
+.tabla-responsiva {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid var(--rosa-suave);
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--rosa-suave);
+    color: #222;
+}
+
+.oculto {
+    display: none;
+    margin-top: 10px;
+    color: var(--rosa-fuerte);
+    font-style: italic;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--azul-claro);
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: var(--rosado-pastel);
+    border-top: 3px solid var(--rosa-fuerte);
+}
+.galeria {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contenedor-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.contenedor-galeria a {
+    text-decoration: none;
+    color: #333;
+    width: 150px;
+    transition: transform 0.3s ease;
+}
+
+.contenedor-galeria a:hover {
+    transform: scale(1.05);
+}
+
+.contenedor-galeria img {
+    width: 100%;
+    height: auto;
+    border: 2px solid var(--azul-claro);
+    border-radius: 10px;
+}
+
+.contenedor-galeria p {
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 0.95em;
+}
+.galeria-libros {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contenedor-libros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.libro {
+    width: 230px;
+    background-color: white;
+    border: 2px solid var(--azul-claro);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.libro:hover {
+    transform: scale(1.05);
+}
+
+.libro img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.libro h3 {
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: var(--rosa-fuerte);
+}
+
+.libro p {
+    font-size: 0.9em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.libro .autor {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 10px;
+    border: 2px solid var(--rosa-suave);
+}
+.menu {
+    background-color: var(--rosa-suave);
+    padding: 10px 0;
+    border-bottom: 2px solid var(--rosa-fuerte);
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--rosa-fuerte);
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: var(--azul-claro);
+}
